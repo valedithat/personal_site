@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my personal site, portfolio, and my blog. I [will] write about security, gnu/linux, and stuff I'm currently learning. This will host any random projects I make too.
 
-Things you may want to cover:
+This is an RoR application hosted on heroku.
 
-* Ruby version
+ruby version: 2.6.3
+rails version: 5.2.3
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Run Locally
+rake db:setup
