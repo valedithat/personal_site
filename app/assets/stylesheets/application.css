@@ -34,25 +34,6 @@ body {
   margin-left: 5%;
 }
 
-
-.specs {
-  display: inline-block;
-  background: yellow;
-  margin-left: 2%;
-  width: 100%;
-  height: 300px;
-}
-
-.terminal {
-  display: inline-block;
-  background: yellow;
-  margin-left: 2%;
-  margin-top: 3%;
-  width: 100%;
-  height: auto;
-  min-height: 500px;
-}
-
 .info {
   background: blue;
   margin-top: 2%;
