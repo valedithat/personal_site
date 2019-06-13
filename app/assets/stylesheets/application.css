@@ -23,6 +23,7 @@ body {
 }
 
 .left {
+  background: purple;
   margin-top: 8%;
   display: inline-block;
   min-width: 60%;
@@ -35,7 +36,7 @@ body {
 }
 
 .info {
-  background: blue;
+  background: teal;
   margin-top: 2%;
   margin-left: 2%;
   width: 100%;
