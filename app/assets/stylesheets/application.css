@@ -26,16 +26,17 @@ body {
   background: purple;
   margin-top: 8%;
   display: inline-block;
-  min-width: 60%;
+  min-width: 72%;
 }
 
 .right {
   display: inline-block;
-  min-width: 30%;
+  min-width: 20%;
   margin-left: 5%;
 }
 
 .info {
+  display: inline-block;
   background: teal;
   margin-top: 2%;
   margin-left: 2%;
@@ -45,6 +46,7 @@ body {
 }
 
 .contact {
+  display: inline-block;
   background: blue;
   margin-top: 6%;
   margin-left: 2%;
