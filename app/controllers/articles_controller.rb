@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
+    
   end
 
   def edit
