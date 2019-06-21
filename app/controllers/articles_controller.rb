@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_admin!, except: [:index, :show]
+
   def new
   end
 
@@ -9,7 +11,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    
+    @articles = Article.all
   end
 
   def edit
