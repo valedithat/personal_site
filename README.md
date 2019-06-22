@@ -1,3 +1,3 @@
 # README
 
-whatever it is that you're looking for its: current_admin
+Personal site made for blogging and hosting current projects and such. Hosting comming soon.

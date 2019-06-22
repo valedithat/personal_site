@@ -1,6 +1,0 @@
-<% if current_admin %>
-  <div class="link"><%= link_to 'Sign Out', destroy_admin_session_path, method: :delete %></div>
-<% else %>
-  <div class="link"><%= link_to 'Sign up', new_admin_registration_path %></div>
-  <div class="link"><%= link_to 'Sign In', admin_session_path %></div>
-<% end %>
