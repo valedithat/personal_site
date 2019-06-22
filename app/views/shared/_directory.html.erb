@@ -1,4 +1,6 @@
-
-<div>
-  <%= render "admins/shared/links" %>
+<div class="directory">
+  <div class="link"><%= link_to 'Dashboard', dashboard_path %></div>
+  <div class="session-links">
+    <%= render "devise/shared/links" %>
+  </div>
 </div>

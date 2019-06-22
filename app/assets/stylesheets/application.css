@@ -37,7 +37,7 @@ body {
 
 .info {
   display: inline-block;
-  background: teal;
+  background: grey;
   margin-top: 2%;
   margin-left: 2%;
   width: 100%;
@@ -47,7 +47,7 @@ body {
 
 .contact {
   display: inline-block;
-  background: blue;
+  background: grey;
   margin-top: 6%;
   margin-left: 2%;
   width: 100%;
