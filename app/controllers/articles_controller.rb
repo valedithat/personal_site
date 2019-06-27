@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @article = Article.find(id_param[:id])
   end
 
   def index
@@ -22,4 +23,10 @@ class ArticlesController < ApplicationController
 
   def destroy
   end
+
+  private
+
+    def id_param
+      params.permit(:id)
+    end
 end
