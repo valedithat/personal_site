@@ -18,6 +18,7 @@ group :development, :test do
   gem "rspec-rails"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
+  gem "lorem-ipsum"
 end
 
 group :development do
