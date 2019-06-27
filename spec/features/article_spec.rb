@@ -13,15 +13,5 @@ describe 'Article' do
         expect(page).to have_content article.description
       end
     end
-
-    it 'displays title link to article show page' do
-      article = articles(:one)
-      visit path
-      # expect(article.title).to have_link
-      within(".article_#{article.id}") do
-        click_on article.id
-      end
-      # expect(current_path.reload).to eq article_path(article)
-    end
   end
 end
