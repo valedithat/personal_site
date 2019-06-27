@@ -18,14 +18,21 @@
         <p class="alert alert-danger"><%= alert %></p>
       <% end %>
 
-
-      <%= yield %>
+      <div class="specs">
+        <h1>Specs</h1>
+      </div>
+      <div class="terminal">
+        <%= yield %>
+      </div>
     </div>
 
     <div class="right">
       <div class="info">
+        <%= render partial: 'shared/directory' %>
       </div>
-      <div class="contact"></div>
+      <div class="contact">
+        <%= render partial: 'shared/contact' %>
+      </div>
     </div>
   </body>
 </html>

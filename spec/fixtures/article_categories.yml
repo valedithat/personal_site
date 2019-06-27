@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-security:
-  name: 'security'
 
-development:
-  name: 'development'
+one:
+  article: 1
+  category: 1

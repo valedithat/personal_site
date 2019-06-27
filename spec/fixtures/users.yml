@@ -1,7 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-security:
-  name: 'security'
-
-development:
-  name: 'development'
+one:
+  email: 'derp@derpton.com'
+  name: 'Super Derp'
