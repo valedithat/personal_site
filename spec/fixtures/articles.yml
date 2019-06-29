@@ -3,24 +3,23 @@
 one:
   title: one
   description: hi
-  user: 1
+  user: one
   body: MyString
 
 two:
   title: two
   description: also hi
-  user: 1
+  user: one
   body: MyString
 
 three:
   title: three
   description: also hi
-  user: 1
+  user: one
   body: MyString
-
 
 four:
   title: four
   description: also hi
-  user: 1
+  user: one
   body: MyString
