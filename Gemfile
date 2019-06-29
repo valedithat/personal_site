@@ -19,6 +19,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem "lorem-ipsum"
+  gem 'shoulda-matchers'
 end
 
 group :development do
