@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations',
+    confirmations: 'users/confirmations',
+    unlocks: 'users/unlocks'
   }
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  # root 'dashboard#show'
-  resources :dashboard, only: [:show]
   resources :articles
 end
