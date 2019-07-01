@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_many :articles
 
-  # omniauthable
+  # omniauthable, :confirmable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable, :trackable, :lockable, :timeoutable
+         :recoverable, :rememberable, :validatable, :trackable, :lockable, :timeoutable
 end
