@@ -1,32 +1,27 @@
 ActiveAdmin.register_page "Dashboard" do
   menu priority: 1
 
-  # content title: proc { I18n.t("active_admin.dashboard") } do
-  #   div class: "blank_slate_container", id: "dashboard_default_message" do
-  #     span class: "blank_slate" do
-  #       span I18n.t("active_admin.dashboard_welcome.welcome")
-  #       small I18n.t("active_admin.dashboard_welcome.call_to_action")
-  #     end
-  #   end
+  content title: proc { I18n.t("active_admin.dashboard") } do
+    columns do
+      panel "Articles" do
+        div button_to 'New Article', new_admin_article_path, method: :get
 
-    # Here is an example of a simple dashboard with columns and panels.
-    #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
+        table_for Article.all do
+          column :title
+          column :description
+          column :created_at
+          column('Actions') { |article| link_to 'View', admin_article_path(article) }
+        end
+      end
 
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
-    # end
-  # end # content
+      panel "Categories" do
+        div button_to 'New Category', new_admin_category_path, method: :get
+
+        table_for Category.all do
+          column :name
+          column('Actions') { |category| link_to 'View', admin_category_path(category) }
+        end
+      end
+    end
+  end
 end
