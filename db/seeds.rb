@@ -5,4 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(name: "Valerie Trudell", email: "valedithat@pm.me", password: "DmuaCa2TTw4WNwX43KRuiqqHagasqaYG4YXTCenTpe6Wv5QwE", password_confirmation: "DmuaCa2TTw4WNwX43KRuiqqHagasqaYG4YXTCenTpe6Wv5QwE") if Rails.env.development?
+if Rails.env.development?
+  User.create!(name: "Valerie Trudell", email: "valedithat@pm.me", password: "DmuaCa2TTw4WNwX43KRuiqqHagasqaYG4YXTCenTpe6Wv5QwE", password_confirmation: "DmuaCa2TTw4WNwX43KRuiqqHagasqaYG4YXTCenTpe6Wv5QwE")
+
+  Category.create! name: "security"
+  Category.create! name: "development"
+
+  Article.create! title: "A good title", description: "A good description", body: 'An article about an article being articley'
+
+  Article.create! title: "Cool cool tumble and drool", description: "Something about a description", body: 'An article about an article being articley'
+end
