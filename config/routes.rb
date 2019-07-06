@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
   root to: 'articles#index'
 
-  devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    unlocks: 'users/unlocks',
+  }, skip: :registration
 
   resources :articles
 end
