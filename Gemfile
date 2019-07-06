@@ -14,6 +14,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'activeadmin'
 gem 'figaro'
+gem 'gemcutter'
+gem 'easy_dates'
 
 group :development, :test do
   gem "database_cleaner"
