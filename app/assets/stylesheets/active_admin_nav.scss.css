@@ -1,3 +1,12 @@
+
+#wrapper {
+  font-weight: 22px;
+}
+
+body {
+  font-size: 89%;
+}
+
 #header {
   background: black;
   color: white;
@@ -62,6 +71,12 @@
   display: block;
   padding: 10px;
   text-align: left;
+}
+
+.flash, .flash_notice {
+  display: block;
+  width: 100%;
+  margin: 0 0 0 17%;
 }
 
 #active_admin_content {
