@@ -38,7 +38,7 @@ body {
 .terminal {
   display: inline-block;
   margin: 3% 0 0 0;
-  width: 100%;
+  width: 80%;
   height: auto;
   min-height: 800px;
   padding: 6%;
@@ -47,8 +47,7 @@ body {
 .right {
   display: inline-block;
   min-width: 20%;
-  max-width: 23%;
-  margin: 0 2% 0 2%;
+  max-width: 23%; margin: 0 2% 0 2%;
 }
 
 .info {
