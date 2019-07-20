@@ -7,11 +7,15 @@ ActiveAdmin.register Category do
     actions
     column :name
     selectable_column
-
   end
 
-  show do
-    #show all articles written with this category
+  show as: :block do |record|
+    div for: record do
+      record.articles.each do |article|
+        div article.title
+        div article.description
+      end
+    end
   end
 
   form do |f|
