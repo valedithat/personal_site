@@ -1,11 +1,1 @@
-<div class="article">
-  <h1 class="title"><%= @article.title %></h1>
-  <span class="date"><%= @article.created_at %></span>
-  <span class="author"><%= @article.user.name %></span>
-  <div class="body"><%= @article.body %></div>
-  <div class="categories">
-    <% @article.categories.each do |category| %>
-        <span class="category_#{category.id}"><%= category.name %></span>
-    <% end %>
-  </div>
-</div>
+<%= render partial: 'shared/article' %>
