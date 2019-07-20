@@ -1,8 +1,7 @@
 ActiveAdmin.register Article do
   menu priority: 2
 
-  permit_params :title, :description, :body, :categories, category_attributes: [:name]
-
+  permit_params :title, :description, :body, :category_ids
 
   index do
     selectable_column
@@ -12,29 +11,28 @@ ActiveAdmin.register Article do
     actions
   end
 
-  show as: :block do |record|
-    div for: record do
-      span record.user.name
-      span record.created_at
-      div record.description
-      div record.body
-    end
+
+  show do
+    render partial: 'shared/article'
   end
 
   form do |f|
+    f.semantic_errors
+
     f.inputs do
-      f.input :title
-      f.input :description
-      f.input :body
+      f.input :title, input_html: { size: 20 }
+      f.input :description, input_html: { rows: 20 }
+      f.input :body, as: :text, input_html: { class: 'autogrow', rows: 50, cols: 50 }
     end
 
-    f.inputs 'Categories' do
-      f.input :categories, as: :select, collection: Category.select(:name).uniq
-      f.object.categories.build
-      f.semantic_fields_for :categories do |category|
-          category.input :name
-        end
-    end
+    # f.inputs do
+    #   # f.input :categories, as: :select, collection: Category.select(:name).uniq
+    #   # f.object.categories.build
+    #
+    #   # f.input :categories
+    #
+    #   f.input :article_categories, :as => :select, :collection => Category.all {|category| [category.name, category.id] }
+    # end
 
     f.actions
   end
