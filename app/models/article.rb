@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+  has_rich_text :body
   belongs_to :user
   has_many :article_categories
   has_many :categories, through: :article_categories
