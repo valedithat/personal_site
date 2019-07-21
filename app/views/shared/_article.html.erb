@@ -6,10 +6,12 @@
   </div>
   <div class="description"><%= @article.description %></div>
   <hr>
-  <div class="body"><%= @article.body %></div>
-  <div class="categories">
-    <% @article.categories.each do |category| %>
-        <span class="category_#{category.id}"><%= category.name %></span>
-    <% end %>
+  <div class="article-meat">
+    <div class="body"><%= @article.body %></div>
+    <div class="categories">
+      <% @article.categories.each do |category| %>
+          <span class="category_#{category.id}"><%= category.name %></span>
+      <% end %>
+    </div>
   </div>
 </div>

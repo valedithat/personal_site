@@ -1,7 +1,11 @@
-// Place all the styles related to the articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
+.article {
+  margin-top: 5%;
+}
+
+.title {
+  margin-top: 5%;
+}
 
 .article-metadata {
   font-size: 16px;
@@ -13,5 +17,9 @@
 }
 
 .description {
-  padding-bottom: 3%;
+  padding-bottom: 9px;
+}
+
+.article-meat {
+  margin: 9% 0 2% 0;
 }

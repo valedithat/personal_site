@@ -1,6 +1,8 @@
 
 #wrapper {
   font-weight: 22px;
+  margin-left: 248px;
+  width: 80%;
 }
 
 body {
@@ -8,11 +10,14 @@ body {
 }
 
 #header {
-  background: black;
+  background-image: url("black_on_white_box_ontop_box.gif");
+  background-repeat: no-repeat;
+  background-size:  cover;
   color: white;
   display: block;
   width: 25%;
-  max-width: 327px;
+  max-width: 248px;
+  min-width: 248px;
   height: 100%;
   z-index: 9000;
   position: fixed;
@@ -64,7 +69,7 @@ body {
 #title_bar {
   display: block;
   width: 100%;
-  margin: 0 0 0 17%;
+  margin: 0 0 0 1%;
 }
 
 #title_bar #titlebar_left, #title_bar #titlebar_right{
@@ -76,10 +81,10 @@ body {
 .flash, .flash_notice {
   display: block;
   width: 100%;
-  margin: 0 0 0 17%;
+  margin: 0 0 0 1%;
 }
 
 #active_admin_content {
-  margin-left: 17%;
+  margin-left: 1%;
   margin-top: 1%;
 }
