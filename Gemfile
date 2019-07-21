@@ -16,6 +16,10 @@ gem 'activeadmin'
 gem 'figaro'
 gem 'gemcutter'
 gem 'easy_dates'
+gem 'actiontext',github:'kobaltz/actiontext',branch:'archive',require:'action_text'
+gem 'image_processing'
+gem 'trix'
+gem 'simple_form'
 
 group :development, :test do
   gem "database_cleaner"
