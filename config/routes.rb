@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     unlocks: 'users/unlocks',
   }, skip: :registration
 
-  resources :articles
+  resources :articles, only: [:show, :index]
 end

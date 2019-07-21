@@ -1,0 +1,10 @@
+.body_panel {
+  padding: 1% 0 0.5% 0;
+}
+
+.body_text_area {
+  min-height: 700px;
+  margin: 5% 0.5% 0 0.5%;
+  background: #a8a8a8;
+  color: black;
+}
