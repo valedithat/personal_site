@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   }, skip: :registration
 
   resources :articles, only: [:show, :index]
+
+  resources :categories, only: [:show]
 end
