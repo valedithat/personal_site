@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :articles
+  has_many :projects
 
   # omniauthable, :confirmable
   devise :database_authenticatable, :registerable,
