@@ -89,7 +89,7 @@ ActiveRecord::Schema.define(version: 2019_10_08_055458) do
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
+    t.bigint "user_id", default: 1, null: false
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
