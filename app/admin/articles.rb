@@ -13,7 +13,7 @@ ActiveAdmin.register Article do
 
 
   show do
-    render partial: 'shared/article'
+    render partial: 'shared/articles/article'
   end
 
   form do |f|
