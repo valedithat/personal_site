@@ -7,6 +7,7 @@
   <div class="article-description"><%= @article.description %></div>
   <hr>
   <div class="article-meat">
+    <%= image_tag(@article.image, size: '1000x600') if @article.image.attached? %>
     <div class="body"><%= @article.body %></div>
     <div class="categories">
       <% @article.categories.each do |category| %>

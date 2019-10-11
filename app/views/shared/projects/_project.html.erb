@@ -1,5 +1,5 @@
 <div class="project">
-  <%= image_tag(project.image) if project.image.attached? %>
+  <%= image_tag(project.image, size: '1000x600') if project.image.attached? %>
   <h1 class="title"><%= project.title %></h1>
   <hr>
   <div class="project-description"><%= project.description %></div>
