@@ -24,25 +24,27 @@ body {
   background-repeat: no-repeat;
   background-size:  cover;
   width: 100%;
+  color: #7cb429;
 }
 
 .left {
   margin: 3% 0 3% 2%;
   display: inline-block;
+  color: #7cb429;
   min-width: 68%;
   max-width: 68%;
 }
 
 a, a:link, a:visited {
-  background-color: #7cb429;
+  color: #7cb429;
   padding: 1%;
 }
 
 .specs {
   background: #0a0a0a;
-  color: #004d00;
+  color: #7cb429;
   opacity: 0.9;
-  border: 5px solid #9acd32;
+  border: 5px solid #7cb429;
   border-radius: 15px;
   display: inline-block;
   width: 100%;
@@ -51,7 +53,7 @@ a, a:link, a:visited {
 
 .terminal {
   background: #0a0a0a;
-  color: #004d00;
+  color: #7cb429;
   opacity: 0.9;
   border: 5px solid #9acd32;
   border-radius: 15px;
@@ -64,6 +66,10 @@ a, a:link, a:visited {
 
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #7cb429;
+}
+
 .right {
   display: inline-block;
   min-width: 20%;
@@ -74,7 +80,7 @@ a, a:link, a:visited {
 .info {
   display: inline-block;
   background: #0a0a0a;
-  color: #004d00;
+  color: #7cb429;
   opacity: 0.9;
   border: 5px solid #9acd32;
   border-radius: 15px;
@@ -89,7 +95,7 @@ a, a:link, a:visited {
   display: inline-block;
   text-align: center;
   background: #0a0a0a;
-  color: #004d00;
+  color: #7cb429;
   opacity: 0.9;
   border: 5px solid #9acd32;
   border-radius: 15px;
