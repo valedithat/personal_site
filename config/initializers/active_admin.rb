@@ -305,7 +305,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  config.footer = 'you can do it'
+  # config.footer = 'you can do it'
 
   # == Sorting
   #

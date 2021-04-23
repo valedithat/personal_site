@@ -7,7 +7,9 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     passwords: 'users/passwords',
     unlocks: 'users/unlocks',
-  }, skip: :registration
+    registration: 'users/registrations'
+  }
+  #, skip: :registration
 
   resources :articles, only: [:show, :index]
   resources :categories, only: [:show]
