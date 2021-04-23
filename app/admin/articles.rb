@@ -1,7 +1,7 @@
 ActiveAdmin.register Article do
   menu priority: 2
 
-  permit_params :title, :description, :body, :category_ids, :image
+  permit_params :title, :description, :body, :category_ids, :image, :user_id
 
   index do
     selectable_column
@@ -28,6 +28,7 @@ ActiveAdmin.register Article do
     f.inputs do
       f.input :title, input_html: { size: 20 }
       f.input :description, input_html: { rows: 20 }
+      f.input :user, label: 'Author', value: 'Valerie Trudell', include_blank: false
     end
 
     f.inputs do
